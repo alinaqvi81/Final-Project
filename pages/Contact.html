@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content=""IE-edge>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>contactForm</title>
+    <link rel="stylesheet" href="../styles/portfolio.css">
+  <body>
+    <header class="header">
+      <a href="#" class="logo">Developer.</a>
+      
+
+      <nav class="navbar">
+        <a href="../index.html" style="--i:1;" >Home</a>
+        <a href="./About.html" style="--i:2;">About</a>
+        <a href="./Skills.html" style="--i:3;">Skills</a>
+        <a href="./Portfolio.html" style="--i:4;">Portfolio</a>
+        <a href="./pages/Contact.html" style="--i:5;"class="active">Contact</a>
+    </nav>
+</header>
+      <br>
+            
+      <section class="home">
+        <div class="Contact-img">
+            <img src="../images/contact.png" alt="image not found">
+        </div>
+        <div class="home-content">
+            <h1>Contact Me</h1>  
+            <h5>E: alinaqvi81@gmail.com</h5>
+            <h5>C: 587-xxx-xxxx</h>         
+            <main class="contact" id = "contact-page">
+                <h2>I would love to hear from you!</h2>
+                <form name="cForm" onsubmit="return validateForm() "action="/images/Thanks.jpg" method="post">
+                    <div class="flex">
+                        <label for="name">Your name:</label>
+                        <input type="text" id="username">
+                        <div class="error" id="nameErr"></div>
+                    </div>
+                    
+                    <div class="flex">
+                        <label for="email">Your email:</label>
+                        <input type="email" id = "email">
+                        <div class="error" id="emailErr"></div>
+
+                    </div>
+                    <div class="flex">
+                        <label for="Phone">Your Phone Number:</label>
+                        <input type="Phone" id = "Phone">
+                        <div class="error" id="mobileErr"></div>
+                       
+                    </div>
+                    <div class="flex">
+                        <label for="message">Your message:</label>
+                        <textarea id="user-message"></textarea>
+                    </div>
+                    <button class = "fake-button blue-hover" type="submit" id = "submit-button">Send Message</button>
+                </form>
+                <script src="/scripts/portfolio.js"></script>
+
+              
+            </main>   
+                          
+                 
+        
+        
+            <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+            <script src="../scripts/portfolio.js"></script>
+        
+        
+</body>
+</section>
+
+</html>
